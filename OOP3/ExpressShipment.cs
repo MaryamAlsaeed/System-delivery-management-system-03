@@ -17,7 +17,7 @@ namespace OOP3
                     _extraFee = value;
             }
         }
-        public ExpressShipment(string trackingCode, string description, double weight, double deliveryFee, DeliveryAddress destination)
+        public ExpressShipment(string trackingCode, string description, double weight, double deliveryFee, DeliveryAddress destination, double _extraFee)
             : base(trackingCode, description, weight, deliveryFee, destination)
         {
             ExtraFee = _extraFee;

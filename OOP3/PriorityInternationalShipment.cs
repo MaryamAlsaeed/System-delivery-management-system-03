@@ -19,10 +19,10 @@ namespace OOP3
                     _priorityFee = value;
             }
         }
-        public PriorityInternationalShipment(string trackingCode, string description, double weight, double deliveryFee, DeliveryAddress destination)
-            : base(trackingCode, description, weight, deliveryFee, destination)
+        public PriorityInternationalShipment(string trackingCode, string description, double weight, double deliveryFee, DeliveryAddress destination, string destinationCountry, double customsFee, double priorityFee)
+            : base(trackingCode, description, weight, deliveryFee, destination, destinationCountry, customsFee)
         {
-            PriorityFee = _priorityFee;
+            PriorityFee = priorityFee;
         }
         public sealed override void GenerateCustomsReport()
         {
