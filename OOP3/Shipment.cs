@@ -51,7 +51,7 @@ namespace OOP3
             }
         }
 
-        public double EstimatedCost
+        public virtual double EstimatedCost
         {
             get { return DeliveryFee + (Weight * 5); }
         }
@@ -76,6 +76,7 @@ namespace OOP3
             if (newFee > 0)
                 DeliveryFee = (double)newFee;
         }
+
         public override void PrintShipment()
         {
             Console.WriteLine($"Tracking code: {TrackingCode}");
