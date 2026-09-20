@@ -76,7 +76,7 @@ namespace OOP3
             if (newFee > 0)
                 DeliveryFee = (double)newFee;
         }
-        public virtual void PrintShipment()
+        public override void PrintShipment()
         {
             Console.WriteLine($"Tracking code: {TrackingCode}");
             Console.WriteLine($"Description: {Description}");
