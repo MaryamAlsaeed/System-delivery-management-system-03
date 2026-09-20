@@ -8,7 +8,7 @@ namespace OOP3
 {
     internal class StandardShipment : Shipment
     {
-        public override void PrintShipment()
+        public override void PrintShipment() 
         {
             Console.WriteLine($"Tracking code: {TrackingCode}");
             Console.WriteLine($"Description: {Description}");
