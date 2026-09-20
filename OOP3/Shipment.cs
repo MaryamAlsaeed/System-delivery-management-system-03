@@ -76,8 +76,17 @@ namespace OOP3
             if (newFee > 0)
                 DeliveryFee = (double)newFee;
         }
-
-        public override void PrintShipment()
+        public void UpdateWeight(double newWeight)
+        {
+            if (newWeight > Weight)
+                Weight = newWeight;
+        }
+        public void UpdateWeight(double newWeight, double packingWeight)
+        {
+            if (newWeight > 0 && packingWeight > 0)
+                Weight = newWeight + packingWeight;
+        }
+        public virtual void PrintShipment()
         {
             Console.WriteLine($"Tracking code: {TrackingCode}");
             Console.WriteLine($"Description: {Description}");
