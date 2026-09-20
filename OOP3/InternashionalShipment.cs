@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP3
 {
-    internal class InternashionalShipment : Shipment
+    public class InternashionalShipment : Shipment
     {
         private string _destinationCountry;
         private double _customsFee;
